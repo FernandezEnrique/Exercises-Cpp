@@ -1,10 +1,10 @@
 # Ignoring all files except gitkeep
 
-./Pointers/bin/*
-!./Pointers/bin/.gitkeep
+Pointers/bin/*
+!Pointers/bin/.gitkeep
 
-./Pointers/obj/*
-!./Pointers/obj/.gitkeep
+Pointers/obj/*
+!Pointers/obj/.gitkeep
 
-./Pointers/lib/*
-!./Pointers/lib/.gitkeep
+Pointers/lib/*
+!Pointers/lib/.gitkeep

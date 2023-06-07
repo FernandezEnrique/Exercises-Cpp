@@ -14,7 +14,8 @@ all: presentation \
      $(BIN)/ex02 \
      $(BIN)/ex03 \
      $(BIN)/ex04 \
-     $(BIN)/ex05
+     $(BIN)/ex05 \
+	 $(BIN)/ex06
 
 
 presentation:
@@ -44,6 +45,9 @@ $(BIN)/ex04: $(OBJ)/ex04.o
 $(BIN)/ex05: $(OBJ)/ex05.o
 	g++ -o $(BIN)/ex05 $(OBJ)/ex05.o
 
+$(BIN)/ex06: $(OBJ)/ex06.o
+	g++ -o $(BIN)/ex06 $(OBJ)/ex06.o
+
 ############
 #  Objects
 ############
@@ -71,6 +75,11 @@ $(OBJ)/ex04.o: $(SRC)/ex04.cpp
 $(OBJ)/ex05.o: $(SRC)/ex05.cpp
 	g++ -c -o $(OBJ)/ex05.o \
 	       $(SRC)/ex05.cpp \
+		   -std=c++14
+
+$(OBJ)/ex06.o: $(SRC)/ex06.cpp
+	g++ -c -o $(OBJ)/ex06.o \
+	       $(SRC)/ex06.cpp \
 		   -std=c++14
 
 ############
