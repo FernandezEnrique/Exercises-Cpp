@@ -1,8 +1,4 @@
-# Exercises C++
-
-Below, you will find an index of some exercises of each subject
-
-## Pointers
+# Pointers
 
 - ex01 -> Simple script to try some pointers features
 - ex02 -> Swap 2 vars inside a function
